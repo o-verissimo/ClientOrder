@@ -80,7 +80,7 @@ public class Order {
         }
         sb.append("Total price: $" + this.total());
 
-
+        return sb.toString();
     }
 
 }
