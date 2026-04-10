@@ -37,4 +37,14 @@ public class OrderItem {
         return quantity * price;
     }
 
+    public String toString(){
+        return product.getName() 
+                + ", $" 
+                + String.format("%.2f", product.getPrice() )
+                + ", Quantity: " 
+                + quantity 
+                + ", Subtotal: $" 
+                + String.format("%.2f", this.subTotal(quantity, price));
+    }
+
 }
